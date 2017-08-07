@@ -1,0 +1,5 @@
+[Unit]
+Description=SyncTest
+[Service]
+ExecStartPre=/bin/mkdir -p /home/andy/test/build
+ExecStart=/bin/cp -a "/home/andy/test/src/" "/home/andy/test/build/"

@@ -1,0 +1,5 @@
+[Unit]
+Description=SyncTest
+[Path]
+PathModified=/home/andy/test/src
+MakeDirectory=true

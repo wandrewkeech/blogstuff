@@ -1,0 +1,7 @@
+[Unit]
+Description=Testing Timer Integration
+Requires=timer-test.path
+[Service]
+ExecStart=/home/andy/.local/bin/filecheck.sh /home/andy/test.file
+RestartSec=1m
+Restart=on-success

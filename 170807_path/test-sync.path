@@ -1,5 +1,5 @@
 [Unit]
 Description=SyncTest
 [Path]
-PathModified=/home/andy/test/src
+PathModified=/home/$USER/Desktop/src
 MakeDirectory=true

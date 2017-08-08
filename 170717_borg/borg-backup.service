@@ -1,0 +1,13 @@
+# Example service unit, change all "$" envvar's, systemd doesn't evaluate them
+[Unit]
+Description=Borg User Backup
+ 
+[Service]
+Type=simple
+Nice=19
+IOSchedulingClass=2
+IOSchedulingPriority=7
+ExecStartPre=/usr/bin/borg break-lock $REPOSITORY
+ExecStart=/home/$USER/.local/bin/borg-backup.sh
+User=$USER
+Group=$GROUP

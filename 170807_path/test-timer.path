@@ -1,7 +1,7 @@
 # This is an example file, you need to change $USER to your username
 [Unit]
-Description=PathTest
+Description=Testing Paths & Timer
 [Path]
-PathModified=/home/$USER/Desktop
+PathExists=/home/$USER/Desktop/test.file
 [Install]
 WantedBy=multi-user.target

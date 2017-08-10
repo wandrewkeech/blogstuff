@@ -1,0 +1,8 @@
+# This is an example file, you need to change $USER to your username
+[Unit]
+Description=Testing Paths & Timer
+[Service]
+# If your install location of filecheck.sh differs, change here
+ExecStart=/home/$USER/.local/bin/filecheck.sh /home/$USER/Desktop/test.file
+RestartSec=3s
+Restart=on-success

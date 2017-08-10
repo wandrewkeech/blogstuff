@@ -1,5 +1,6 @@
+# This is an example file, you need to change $USER to your username
 [Unit]
 Description=SyncTest
 [Path]
-PathModified=/home/$USER/Desktop/src
-MakeDirectory=true
+PathModified=/dev/disk/
+PathExists=/media/$USER/Backup

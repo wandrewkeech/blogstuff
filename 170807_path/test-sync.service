@@ -1,5 +1,8 @@
+# This is an example file, you need to change $USER to your username
 [Unit]
 Description=SyncTest
 [Service]
-ExecStartPre=/bin/mkdir -p /home/andy/test/build
-ExecStart=/bin/cp -a "/home/andy/test/src/" "/home/andy/test/build/"
+# If your install location of sync.sh differs, change here
+ExecStart=/home/$USER/.local/bin/sync.sh /media/$USER/Backup /home/$USER/Desktop/test.file
+RestartSec=5s
+Restart=on-success
